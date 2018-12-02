@@ -20,9 +20,11 @@ namespace Desktop
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form AppForm = new AppMainForm();
-            AppForm.Show();
+            AppMainForm AppForm = new AppMainForm();
+            AppForm.ShowDialog();
             
         }
+
+
     }
 }
