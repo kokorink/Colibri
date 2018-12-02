@@ -34,6 +34,7 @@ namespace Desktop
             dataGridView11.Rows[11].Cells[0].Value = "Подготовка документации";
             dataGridView11.Rows[12].Cells[0].Value = "Подписание актов";
             dataGridView11.Rows[13].Cells[0].Value = "Согласование закрытия";
+            dateTimePicker8.Value = DateTime.Now.AddDays(-31);
         }
 
 
@@ -55,6 +56,11 @@ namespace Desktop
         {
             OpenFileDialog OFD = new OpenFileDialog();
             OFD.ShowDialog();
+        }
+
+        private void groupBox22_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
