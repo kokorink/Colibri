@@ -17,8 +17,7 @@ namespace Desktop
         public AppMainForm()
         {
             InitializeComponent();
-            if (checkBox11.Checked == true)
-                comboBox13.Enabled = false;
+
             dataGridView11.RowCount = 14;
             dataGridView11.Rows[0].Cells[0].Value = "Создание";
             dataGridView11.Rows[1].Cells[0].Value = "Согласование НО";
@@ -34,7 +33,30 @@ namespace Desktop
             dataGridView11.Rows[11].Cells[0].Value = "Подготовка документации";
             dataGridView11.Rows[12].Cells[0].Value = "Подписание актов";
             dataGridView11.Rows[13].Cells[0].Value = "Согласование закрытия";
+
             dateTimePicker8.Value = DateTime.Now.AddDays(-31);
+            dataGridView10.RowCount = 20;
+            dateTimePicker4.Value = DateTime.Now.AddDays(-31);
+
+
+
+
+
+            dataGridView10.Rows[0].Cells[0].Value = 10001;
+            dataGridView10.Rows[0].Cells[1].Value = "ООО 'Ромашка' - 00001";
+            dataGridView10.Rows[0].Cells[2].Value = "Организация скважины для снабжения тех.водой";
+            dataGridView10.Rows[0].Cells[3].Value = "15.12.2018";
+            dataGridView10.Rows[0].Cells[4].Value = "29.12.2018";
+            dataGridView10.Rows[0].Cells[5].Value = 800000;
+            dataGridView10.Rows[0].Cells[6].Value = "25%";
+            dataGridView10.Rows[0].Cells[7].Value = "50/50/5";
+            dataGridView10.Rows[0].Cells[8].Value = "Kokorin.Konstantin";
+            dataGridView11.Rows[0].Cells[1].Value = "30.11.18";
+            dataGridView11.Rows[0].Cells[2].Value = "Kokorin.Konstantin";
+            dataGridView11.Rows[0].Cells[3].Value = "Выполнено";
+            dataGridView11.Rows[1].Cells[1].Value = "";
+            dataGridView11.Rows[1].Cells[2].Value = "Ivanov.Ivan";
+            dataGridView11.Rows[1].Cells[3].Value = "В работе";
         }
 
 
